@@ -1,0 +1,1076 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RESTAURANTLY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- modal  -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Specials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chefs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item px-1 dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-auto-close="false">
+                                DROPDAWN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Drop dawn 1</a></li>
+                                <li class=" dropend dropdown-menu-lg-end">
+                                    <a class="dropdown-item dropend" data-bs-toggle="dropdown" aria-expanded="false"
+                                        href="#">Deep Drop dawn</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Deep Drop dawn 1</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Deep Drop dawn 2</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Deep Drop dawn 3</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Deep Drop dawn 4</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Deep Drop dawn 5</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Drop dawn 2</a></li>
+                                <li><a class="dropdown-item" href="#">Drop dawn 3</a></li>
+                                <li><a class="dropdown-item" href="#">Drop dawn 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="custom-header-button" type="submit">BOOK A TABLE</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="position-relative z-3 fixed-top">
+        <div
+            class="container d-flex justify-content-center justify-content-sm-center justify-content-md-between py-2 text-white">
+            <div class="p-0">
+                <i class="fa-solid fa-mobile-button fs-6 common-text px-2"></i><span class="">+1 5589 55488 55</span>
+                <i class="fa-regular fa-clock fs-6 common-text px-2"></i><span class="">Mon-Sat: 11AM - 23PM</span>
+            </div>
+            <div class="p-0 d-none d-sm-none d-md-block">
+                <span> <span class="common-text">En</span> / De</span>
+            </div>
+        </div>
+    </section>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg position-relative z-5 p-0">
+            <div class="container-fluid header-bg p-0">
+                <div class="container py-2 d-flex justify-content-between align-items-center">
+                    <a class="navbar-brand fs-3 text-white" href="#">RESTAURANTLY</a>
+                    <button class="navbar-toggler order-lg-1 order-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation" style="border: 0;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Specials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Chefs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item px-1 dropdown">
+                                <a class="nav-link dropdown-toggle cus-menu-hov1" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false">
+                                    Drop Dawn
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item cus-menu-hov1" href="#">Drop dawn 1</a></li>
+                                    <li class=" dropend dropdown-menu-lg-end">
+                                        <a class="dropdown-item dropend cus-menu-hov1" data-bs-toggle="dropdown"
+                                            aria-expanded="false" href="#">Deep Drop dawn</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item cus-menu-hov1" href="#">Deep Drop dawn 1</a>
+                                            </li>
+                                            <li><a class="dropdown-item cus-menu-hov1" href="#">Deep Drop dawn 2</a>
+                                            </li>
+                                            <li><a class="dropdown-item cus-menu-hov1" href="#">Deep Drop dawn 3</a>
+                                            </li>
+                                            <li><a class="dropdown-item cus-menu-hov1" href="#">Deep Drop dawn 4</a>
+                                            </li>
+                                            <li><a class="dropdown-item cus-menu-hov1" href="#">Deep Drop dawn 5</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="cus-menu-hov1 dropdown-item" href="#">Drop dawn 2</a></li>
+                                    <li><a class="cus-menu-hov1 dropdown-item" href="#">Drop dawn 3</a></li>
+                                    <li><a class="cus-menu-hov1 dropdown-item" href="#">Drop dawn 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Contact</a>
+                            </li>
+                            <li class="nav-item d-flex">
+                                <button class="custom-header-button p-2" type="submit">BOOK A TABLE</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container d-flex align-items-center justify-content-center h-100">
+            <div
+                class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 text-center text-sm-center text-md-center text-lg-start">
+                <div class="col position-relative z-1">
+                    <h1 class="text-white fs-1">Welcome to <span class="common-text">Restaurantly</span></h1>
+                    <h3 class="text-white text-opacity-75">Delivering great food for more than 18 years!</h3>
+                    <div>
+                        <button class="custom-header-button p-2" type="submit">BOOK A TABLE</button>
+                        <button class="custom-header-button p-2" type="submit">BOOK A TABLE</button>
+                    </div>
+                </div>
+                <div class="col position-relative z-1">
+                    <h1 class="text-white">Welcome to <span class="common-text">Restaurantly</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 ">
+                    <div class="col text-white order-2 order-lg-1">
+                        <h3>They provide for the most worthy pleasures, as if the pleasures of the body were to be
+                            assumed.</h3>
+                        <p>It is important to take care of the patient, to be followed by the doctor, but it is a time
+                            of great pain and suffering.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fa-regular fa-circle-check common-text"></i> Ullamco laboris required and
+                                aliquip ex and comfortable consequat.</li>
+                            <li><i class="fa-regular fa-circle-check common-text"></i> Doubts or irrure pain in
+                                reprimands in the pleasure he wants</li>
+                            <li><i class="fa-regular fa-circle-check common-text"></i> I do not work at all except to
+                                get some advantage out of it. Duis aureur irure pain in reprehendit in pleasure tridetas
+                                storacalaperda mastir pain eu fu no be born.</li>
+                        </ul>
+                        <h5>
+                            I do not work at all except to get some advantage out of it. Do not be angry with the pain
+                            in the reprimand in the pleasure he wants to be a hair from the pain in the hope that there
+                            is no breeding. Unless they are blinded by lust, they do not come out, they are in fault who
+                            abandon their duties, the soul softens, that is toils
+                            </h3>
+                    </div>
+                    <div class="col order-1 order-lg-2">
+                        <div class="img-about">
+                            <img src="images/about.jpg" class="img-fluid h-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="why_as">
+            <div class="container">
+                <p class="text-white">WHY AS_________</p>
+                <h2 class="common-text">Why Choose Our Restaurant</h2>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card bg-card h-100">
+                            <div class="card-body">
+                                <h3 class="card-number-color">01</h3>
+                                <h3 class="card-title card-text-color py-2">Lorem Ipsum</h3>
+                                <p class="card-text card-text-color card-para">This is a longer card with supporting
+                                    text below as a natural lead-in to additional content. This content is a little bit
+                                    longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-card h-100">
+                            <div class="card-body">
+                                <h3 class="card-number-color">02</h3>
+                                <h3 class="card-title card-text-color py-2">Repellat Nihil</h3>
+                                <p class="card-text card-text-color card-para">Dolorem est fugiat occaecati voluptate
+                                    velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-card h-100">
+                            <div class="card-body">
+                                <h3 class="card-number-color">03</h3>
+                                <h3 class="card-title card-text-color py-2">Ad ad velit qui</h3>
+                                <p class="card-text card-text-color card-para">Molestiae officiis omnis illo asperiores.
+                                    Aut doloribus vitae sunt debitis quo vel nam quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container">
+                <p class="text-white">MENU_________</p>
+                <h2 class="common-text">Check Our Tasty Menu</h2>
+
+                <div class="mb-3 d-flex justify-content-center align-items-center">
+                    <div id="tab1" class="px-2 menu-btn" onClick="selectTab(0);">All</div>
+                    <div id="tab3" class="px-2 menu-btn" onClick="selectTab(1);">Starters</div>
+                    <div id="tab2" class="px-2 menu-btn" onClick="selectTab(2);">Salads</div>
+                    <div id="tab2" class="px-2 menu-btn" onClick="selectTab(3);">Specialty</div>
+                </div>
+                <div class="tabview">
+                    <div class="container">
+                        <div class="row g-5 pt-5">
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/lobster-bisque.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Lobster Bisque</a>
+                                            <span class="common-text">$5.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/bread-barrel.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Bread Barrel</a>
+                                            <span class="common-text">$6.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/tuscan-grilled.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Tuscan Grilled</a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Grilled chicken with provolone, artichoke hearts, and
+                                            roasted
+                                            red pesto</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/mozzarella.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Mozzarella Stick</a>
+                                            <span class="common-text">$4.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/greek-salad.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Greek Salad</a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/spinach-salad.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Spinach Salad
+                                            </a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Fresh spinach with mushrooms, hard boiled egg, and warm
+                                            bacon vinaigrette</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/spinach-salad.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Lobster Roll</a>
+                                            <span class="common-text">$12.95</span>
+                                        </div>
+                                        <p class="common-gray">Plump lobster meat, mayo and crisp lettuce on a toasted
+                                            bulky roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabview">
+                    <div class="container">
+                        <div class="row g-5 pt-5 ">
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/bread-barrel.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Bread Barrel</a>
+                                            <span class="common-text">$6.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/tuscan-grilled.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Tuscan Grilled</a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Grilled chicken with provolone, artichoke hearts, and
+                                            roasted
+                                            red pesto</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/mozzarella.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Mozzarella Stick</a>
+                                            <span class="common-text">$4.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabview">
+                    <div class="container">
+                        <div class="row g-5 pt-5 ">
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/lobster-bisque.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Lobster Bisque</a>
+                                            <span class="common-text">$5.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/bread-barrel.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Bread Barrel</a>
+                                            <span class="common-text">$6.95</span>
+                                        </div>
+                                        <p class="common-gray">Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/tuscan-grilled.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Tuscan Grilled</a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Grilled chicken with provolone, artichoke hearts, and
+                                            roasted
+                                            red pesto</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabview">
+                    <div class="container">
+                        <div class="row g-5 pt-5 ">
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/greek-salad.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Greek Salad</a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/spinach-salad.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Spinach Salad
+                                            </a>
+                                            <span class="common-text">$9.95</span>
+                                        </div>
+                                        <p class="common-gray">Fresh spinach with mushrooms, hard boiled egg, and warm
+                                            bacon vinaigrette</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex">
+                                    <img src="images/menu/spinach-salad.jpg" class="img-fluid menu-circle" alt="">
+                                    <div class="list w-100 d-flex flex-column px-3">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center menu-dotted-line ">
+                                            <a href="#" class="text-decoration-none">Lobster Roll</a>
+                                            <span class="common-text">$12.95</span>
+                                        </div>
+                                        <p class="common-gray">Plump lobster meat, mayo and crisp lettuce on a toasted
+                                            bulky roll</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="speacial">
+            <div class="container py-5">
+                <p class="text-white">MENU_________</p>
+                <h2 class="common-text">Check Our Tasty Menu</h2>
+                <div class="row py-4">
+                    <div class="col-lg-3 p-0">
+                        <ul class="list-unstyled">
+                            <li class="vertical-tabview" onclick="speacialView(0)">Modi sit est</li>
+                            <li class="vertical-tabview" onclick="speacialView(1)">Unde praesentium sed</li>
+                            <li class="vertical-tabview" onclick="speacialView(2)">Pariatur explicabo vel</li>
+                            <li class="vertical-tabview" onclick="speacialView(3)">Nostrum qui quasi</li>
+                            <li class="vertical-tabview" onclick="speacialView(4)">Iusto ut expedita aut</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="speacialTabview">
+                            <div class="row">
+                                <div class="col-lg-8 ps-4 order-2 order-lg-1">
+                                    <h3 class="fw-bold card-text-color pb-2">
+                                        But let me open it to the architect
+                                    </h3>
+                                    <h6 class="common-gray pb-2"><em>
+                                            He who has the praiseworthy results of his labors should be the one who to
+                                            the
+                                            wise dila parde rangar raqer a videna mareta paulona marka</em></h6>
+                                    <p class="common-gray">And to us his ancestors. For pleasures, as they are for
+                                        flattery and these. She hates those very tasks. They occur here as trouble or
+                                        who. It repels the smallest thing of his, and who is nothing big. Let him seek
+                                        the suffering that follows from those who accuse us of the like</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="images/specials-1.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speacialTabview">
+                            <div class="row">
+                                <div class="col-lg-8 ps-4 order-2 order-lg-1">
+                                    <h3 class="fw-bold card-text-color pb-2">
+                                        Et blanditiis nemo veritatis excepturi
+                                    </h3>
+                                    <h6 class="common-gray pb-2"><em>
+                                            Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata
+                                            raqer a videna mareta paulona marka</em></h6>
+                                    <p class="common-gray">Ea ipsum voluptatem consequatur quis est. Illum error ullam
+                                        omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus
+                                        eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode
+                                        pakto madirna desera vafle de nideran pal</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="images/specials-2.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speacialTabview">
+                            <div class="row">
+                                <div class="col-lg-8 ps-4 order-2 order-lg-1">
+                                    <h3 class="fw-bold card-text-color pb-2">
+                                        Impedit facilis occaecati odio neque aperiam sit
+                                    </h3>
+                                    <h6 class="common-gray pb-2"><em>
+                                            Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui
+                                            natus non sunt dicta dolor et. In asperiores velit quaerat perferendis
+                                            aut</em></h6>
+                                    <p class="common-gray">Iure officiis odit rerum. Harum sequi eum illum corrupti
+                                        culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam
+                                        minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit
+                                        ullam. Soluta et harum voluptatem optio quae</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="images/specials-3.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speacialTabview">
+                            <div class="row">
+                                <div class="col-lg-8 ps-4 order-2 order-lg-1">
+                                    <h3 class="fw-bold card-text-color pb-2">
+                                        Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore
+                                    </h3>
+                                    <h6 class="common-gray pb-2"><em>
+                                            Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis
+                                            delectus</em></h6>
+                                    <p class="common-gray">Eaque consequuntur consequuntur libero expedita in voluptas.
+                                        Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime
+                                        error in consequatur corporis atque. Eligendi asperiores sed qui veritatis
+                                        aperiam quia a laborum inventore</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="images/specials-4.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speacialTabview">
+                            <div class="row">
+                                <div class="col-lg-8 ps-4 order-2 order-lg-1">
+                                    <h3 class="fw-bold card-text-color pb-2">
+                                        Est eveniet ipsam sindera pad rone matrelat sando reda
+                                    </h3>
+                                    <h6 class="common-gray pb-2"><em>
+                                            Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</em></h6>
+                                    <p class="common-gray">Exercitationem nostrum omnis. Ut reiciendis repudiandae
+                                        minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque
+                                        qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                    <img src="images/specials-5.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="events">
+            <div class="container">
+                <p class="text-white">EVENTS_________</p>
+                <h2 class="common-text">Organize Your Events in our Restaurant</h2>
+                <div class="slide-container">
+                    <div class="slide fade">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+                            <div class="col">
+                                <img src="images/event-birthday.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col text-white">
+                                <h3 class="common-text">Birthday Parties</h3>
+                                <h3>$189</h3>
+                                <p><em>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </em></p>
+
+                                <ul class="list-unstyled">
+                                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                </ul>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+                            <div class="col">
+                                <img src="images/event-private.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col text-white">
+                                <h3 class="common-text">Private Parties</h3>
+                                <h3>$290</h3>
+                                <p><em>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </em></p>
+
+                                <ul class="list-unstyled">
+                                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                </ul>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide fade">
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
+                            <div class="col">
+                                <img src="images/event-custom.jpg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col text-white">
+                                <h3 class="common-text">Custom Parties</h3>
+                                <h3>$99</h3>
+                                <p><em>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.
+                                    </em></p>
+
+                                <ul class="list-unstyled">
+                                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li>Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                                    <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                </ul>
+                                <p>
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <div class="container py-5">
+                <p class="text-white">RESERVATION_________</p>
+                <h2 class="common-text">Book a Table</h2>
+                <div class="row py-4 g-3">
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="text" name="uname" class="form-control rounded-0 shadow-none" id="yourName"
+                                placeholder="Your Name">
+                            <span id="UserNameValue"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="email" class="form-control rounded-0 shadow-none" id="yourEmail"
+                                placeholder="Your Email">
+                            <span id="UserEmailValue"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="number" class="form-control rounded-0 shadow-none" id="yourPhone"
+                                minlength="10" placeholder="Your Phone">
+                            <span id="UserPhoneValue"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="text" name="date" class="form-control rounded-0 shadow-none" id="date"
+                                placeholder="Date">
+                            <span id="UserDateValue"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="text" name="time" class="form-control rounded-0 shadow-none" id="time"
+                                placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div>
+                            <input type="number" class="form-control rounded-0 shadow-none" id="number"
+                                placeholder="# of People">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div>
+                            <textarea class="form-control rounded-0" id="Message" rows="4"
+                                placeholder="Message (opational)"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-2">
+                    <button class="custom-form-button" id="formBtn" type="submit">Book A Table</button>
+                </div>
+            </div>
+        </section>
+        <section id="gallary">
+            <div class="container">
+                <p class="text-white">GALLERY_________</p>
+                <h2 class="common-text">Some photos from Our Restaurant</h2>
+            </div>
+            <div class="container-fluid py-5">
+                <div class="row  px-2">
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-1.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-2.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-3.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-4.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-5.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-6.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-7.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-4 p-0 gallary-image">
+                        <img src="images/gallery/gallery-8.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chefs">
+            <div class="container">
+                <p class="text-white">GALLERY_________</p>
+                <h2 class="common-text">Some photos from Our Restaurant</h2>
+                <div class="row g-4 py-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="chefs-img">
+                            <img src="images/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                            <div class="chefs-position">
+                                <div class="chefs-info">
+                                    <h3>Walter White</h3>
+                                    <p><em>Master Chef</em></p>
+                                </div>
+                                <ul class="list-unstyled d-flex justify-content-center chefs-social">
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-facebook chefs-social-icon px-3 fs-4"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter chefs-social-icon px-3 fs-4"></i></a>
+                                    </li>
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-instagram chefs-social-icon px-3 fs-4"></i></a></li>
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-linkedin chefs-social-icon px-3 fs-4"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="chefs-img">
+                            <img src="images/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                            <div class="chefs-position">
+                                <div class="chefs-info">
+                                    <h3>Sarah Jhonson</h3>
+                                    <p><em>Patissier</em></p>
+                                </div>
+                                <ul class="list-unstyled d-flex justify-content-center chefs-social">
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-facebook chefs-social-icon px-3 fs-4"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter chefs-social-icon px-3 fs-4"></i></a>
+                                    </li>
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-instagram chefs-social-icon px-3 fs-4"></i></a></li>
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-linkedin chefs-social-icon px-3 fs-4"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="chefs-img">
+                            <img src="images/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                            <div class="chefs-position">
+                                <div class="chefs-info">
+                                    <h3>William Anderson</h3>
+                                    <p><em>Cook</em></p>
+                                </div>
+                                <ul class="list-unstyled d-flex justify-content-center chefs-social">
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-facebook chefs-social-icon px-3 fs-4"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter chefs-social-icon px-3 fs-4"></i></a>
+                                    </li>
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-instagram chefs-social-icon px-3 fs-4"></i></a></li>
+                                    <li><a href="#"><i
+                                                class="fa-brands fa-linkedin chefs-social-icon px-3 fs-4"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <p class="text-white">CONTACT_________</p>
+                <h2 class="common-text">Contact Us</h2>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.6728888523!2d72.65748223205493!3d21.15944056645878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1673590415833!5m2!1sen!2sin"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section>
+            <div class="container my-5">
+                <div class="row g-2">
+                    <div class="col-lg-4">
+                        <div class="mb-4">
+                            <div class="location d-flex align-items-center">
+                                <span class="round-icon-footer"><i class="fa-solid fa-location-dot"></i></span>
+                                <div class="d-flex flex-column ps-3 text-white">
+                                    <h5 class="fw-bold">Location:</h4>
+                                        <h6 class="common-gray">A108 Adam Street, New York, NY 535022</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="location d-flex">
+                                <span class="round-icon-footer"><i class="fa-regular fa-clock"></i></span>
+                                <div class="d-flex flex-column ps-3 text-white">
+                                    <h5 class="fw-bold">Open Hours:</h4>
+                                        <p class="common-gray m-0">Monday-Saturday:</h6>
+                                        <p class="common-gray m-0">11:00 AM - 2300 PM</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="location d-flex align-items-center">
+                                <span class="round-icon-footer"><i class="fa-regular fa-envelope"></i></span>
+                                <div class="d-flex flex-column ps-3 text-white">
+                                    <h5 class="fw-bold">Email:</h4>
+                                        <h6 class="common-gray">info@example.com</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="location d-flex align-items-center">
+                                <span class="round-icon-footer"><i class="fa-solid fa-mobile"></i></span>
+                                <div class="d-flex flex-column ps-3 text-white">
+                                    <h5 class="fw-bold">Call:</h4>
+                                        <h6 class="common-gray">+1 5589 55488 55s</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="">
+                            <div class="row g-4">
+                                <div class="col">
+                                    <div class="row row-cols-md-1 row-cols-lg-2 row-cols-1 g-4">
+                                        <div class="col">
+                                            <input type="text" name="ffname"
+                                                class="form-control form-control-lg rounded-0" placeholder="First name"
+                                                aria-label="First name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="email" name="llname"
+                                                class="form-control form-control-lg rounded-0" placeholder="Last name"
+                                                aria-label="Last name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="subject" class="form-control form-control-lg rounded-0"
+                                        placeholder="Subject" aria-label="Subject">
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control form-control-lg rounded-0"
+                                        id="exampleFormControlTextarea1" rows="5" placeholder="Message "></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="custom-footer-button" id="formBtn" type="submit">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container text-start">
+            <div class="row g-2 py-4">
+                <div class=" ps-3 col-12 col-lg-3 col-md-6 col-sm-12">
+                    <div class="py-2 text-white">
+                        <h3 class="mb-4">TECHIE</h3>
+                        <p> <span>A108 Adam Street <br> New York, NY 535022<br> United States <br></span><br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br> <strong>Email:</strong> info@example.com<br>
+                        </p>
+                        <ul class="list-unstyled d-flex">
+                            <li class=" footer-social"><a href="#"><i class="fa-brands fa-instagram "></i></a></li>
+                            <li class=" footer-social"><a href="#"><i class="fa-brands fa-twitter "></i></a></li>
+                            <li class=" footer-social"><a href="#"><i class="fa-brands fa-facebook "></i></a></li>
+                            <li class=" footer-social"><a href="#"><i class="fa-brands fa-linkedin "></i></a></li>
+                            <li class=" footer-social"><a href="#"><i class="fa-brands fa-skype "></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2 col-md-6 col-sm-12">
+                    <div class="p-2">
+                        <h5 class="text-white">Useful Links</h5>
+                        <ul class="list-unstyled ps-1">
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2 footer-link-hover"
+                                    href="#">Home</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i></i><a
+                                    class="px-2 footer-link-hover" href="#">About us</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2
+                                footer-link-hover" href="#">Services</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2
+                                footer-link-hover" href="#">Terms of service</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2
+                                footer-link-hover" href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+                    <div class=" p-2">
+                        <h5 class="text-white">Our Services</h5>
+                        <ul class="list-unstyled ps-1">
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2 footer-link-hover"
+                                    href="#">Web Design</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2 footer-link-hover"
+                                    href="#">Web Development</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2
+                                footer-link-hover" href="#">Product Management</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i></i><a class="px-2
+                                footer-link-hover" href="#">Marketing</a></li>
+                            <li class="py-2 d-flex align-items-center"><i
+                                    class="fa-solid fa-chevron-right common-text"></i><a class="px-2
+                                footer-link-hover" href="#">Graphic Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                    <div class=" p-2">
+                        <h5 class="mb-4 text-white">Our Newsletter</h5>
+                        <p class="py-1 text-white">Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+                        </p>
+                        <!-- <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <button class="btn footer-form-button" type="button" id="button-addon2">Subscribe</button>
+                        </div> -->
+                        <form class="footer-username">
+                            <input type="email" name="email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="py-3">
+        <div class="text-center text-white">
+            <div class="fw-normal"> © Copyright <strong>Techie</strong>. All Rights Reserved</div>
+            <p>Designed by Nikunj italiya</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
